@@ -4,7 +4,7 @@
 
 [Calculus Introduction](tutorials/calculus/calc_intro.html) <br>
 [Limits, Derivatives, & Integrals](tutorials/calculus/lmt_diff_int.html) <br>
-[Series](tutorials/calculus/series.ipynb) <br>
+[Series](tutorials/calculus/series.html) <br>
 [Parametric Equations & Polar Coordinates (in progress)](tutorials/calculus/par_pol.html) <br>
 [Vectors & Vector Calculus (in progress)](tutorials/calculus/vectors.html) <br>
 [Full Calculus Tutorial (in progress)](tutorials/calculus/calculus_tutorial.html)
