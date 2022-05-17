@@ -1,5 +1,4 @@
 # Benton Tripp
-![Benton Tripp](docs/assets/img/IMG_8895_Original.jpg)
 ### Connect
 You can find me on LinkedIn :point_right: [LinkedIn Profile](https://www.linkedin.com/in/bentontripp/) <br>
 ### About Me
