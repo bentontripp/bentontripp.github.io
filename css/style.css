@@ -387,7 +387,7 @@ a:focus {
 }
 
 .get_in_touch .email-box {
-  height: 35px;
+  height: 90px;
   padding-left: 20px;
 }
 
@@ -398,6 +398,7 @@ a:focus {
   border-radius: 20px;
   outline: none;
   padding-left: 20px;
+  margin-bottom: 3px;
 }
 
 .get_in_touch .email-box input::placeholder {
@@ -407,6 +408,7 @@ a:focus {
 .get_in_touch .message-box {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 2px;
 }
 
 .get_in_touch .message-box textarea {
@@ -419,7 +421,19 @@ a:focus {
   opacity: .4;
 }
 
-.get_in_touch button {
+.get_in_touch #submit-button {
+  border: none;
+  background-color: #005834;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 7px 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.get_in_touch #reset-button {
   border: none;
   background-color: #005834;
   color: #fff;

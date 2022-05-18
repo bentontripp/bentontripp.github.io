@@ -34,7 +34,7 @@
 
 </head>
 
-<body>
+<body onunload="OnReload()">
   <div class="top_container">
     <!-- header section strats -->
     <header class="header_section">
@@ -113,19 +113,22 @@
         <h5>
           Get in Touch
         </h5>
-        <form action="">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScJyLonDan8lh85Z1W27jg945VyJb5245FgcosdAXKzNMIx4g/formResponse?" name="gform" id="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;"> 
+          <!-- <input type="hidden" name="csrf" value="5d6fg58i-6d52-6587-ps98-4a5as6sd5r"> -->
           <div class="email-box">
-            <input type="email" placeholder="Enter your email" onkeydown="OnEnter(event)">
+            <input id="entry.1392159076" name="entry.1392159076" type="text" placeholder="Enter your first name" onkeydown="OnEnter(event)">
+            <input id="entry.1746517230" name="entry.1746517230" type="text" placeholder="Enter your last name" onkeydown="OnEnter(event)">
+            <input id="entry.1934317596" name="entry.1934317596" type="email" placeholder="Enter your email" onkeydown="OnEnter(event)">
           </div>
           <div class="message-box">
-            <textarea placeholder="Write your message here" rows="4" cols="50"></textarea>
+            <textarea id="entry.1722223176" name="entry.1722223176" placeholder="Write your message here" rows="4" cols="50"></textarea>
           </div>
           <div>
-            <button type="submit">
-              Submit
-            </button>
+            <input id="submit-button" type="submit" value="Submit">
+            <input id="reset-button" type="reset" value="Reset">
           </div>
         </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       </div>
     </div>
   </section>
