@@ -3,8 +3,6 @@ body {
   color: #000205;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -322,41 +320,93 @@ a:focus {
 
 /* info section */
 .info_section {
-  padding-top: 30px;
-  padding-bottom: 1px;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: #fff;
   background-color: #000;
 }
 
-.info_logo h2 {
+.contact_container {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info_social {
+  padding: 3% 5%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.info_social a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5em;
+  white-space: nowrap;
+}
+
+.github:hover{
+  transform: translateY(-3%);
+  cursor: pointer;
+  color:#005834;
+}
+
+.github img {
+  width: 90px;
+}
+
+.linkedin {
+  margin: 3%;
+}
+
+.linkedin:hover{
+  transform: translateY(-3%);
+  cursor: pointer;
+  color:#005834;
+}
+
+.linkedin img {
+  width: 62px;
+}
+
+.get_in_touch {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.get_in_touch h5 {
   color: #005834;
   font-family: 'Poppins', sans-serif;
 }
 
-.info_section .col-md-4 {
-  padding: 0 30px;
-}
-
-.info_section .col-md-4 h5 {
-  text-transform: uppercase;
-}
-
-.info_news input {
+.get_in_touch input {
   border: none;
-  width: 80%;
-  height: 35px;
   border-radius: 20px;
   background-color: #fff;
   outline: none;
   padding-left: 20px;
-  margin-top: 15px;
 }
 
-.info_news input::placeholder {
+.get_in_touch input::placeholder {
   opacity: .4;
 }
 
-.info_news button {
+.get_in_touch .email-box {
+  height: 35px;
+  padding-left: 20px;
+}
+
+.get_in_touch .message-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.get_in_touch button {
   border: none;
   background-color: #005834;
   color: #fff;
@@ -365,25 +415,10 @@ a:focus {
   padding: 7px 25px;
   border-radius: 20px;
   margin-top: 20px;
-}
-
-.info_address p {
   margin-bottom: 5px;
 }
 
-.custom_border-btm {
-  border-bottom: 1px solid #fff;
-}
-
-.info_social {
-  display: flex;
-  justify-content: space-between;
-  width: 150px;
-  margin: 30px auto;
-}
-
 /* end info section */
-
 
 
 /* footer section*/
@@ -405,3 +440,13 @@ a:focus {
 }
 
 /* end footer section*/
+
+
+@media only screen and (max-width: 400px) {
+  .contact_container {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+} 
