@@ -381,6 +381,8 @@ a:focus {
 
 .get_in_touch h5 {
   color: #005834;
+  font-size: 2em;
+  padding-left: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -401,9 +403,17 @@ a:focus {
   padding-left: 20px;
 }
 
+.get_in_touch .email-box input {
+  width: 50%;
+}
+
 .get_in_touch .message-box {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.get_in_touch .message-box textarea {
+  width: 600px;
 }
 
 .get_in_touch button {
@@ -442,11 +452,15 @@ a:focus {
 /* end footer section*/
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .contact_container {
     display: flex;
     justify-content: left;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .get_in_touch .message-box textarea {
+    width: 400px;
   }
 } 
