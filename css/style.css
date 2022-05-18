@@ -386,25 +386,22 @@ a:focus {
   font-family: 'Poppins', sans-serif;
 }
 
-.get_in_touch input {
-  border: none;
-  border-radius: 20px;
-  background-color: #fff;
-  outline: none;
-  padding-left: 20px;
-}
-
-.get_in_touch input::placeholder {
-  opacity: .4;
-}
-
 .get_in_touch .email-box {
   height: 35px;
   padding-left: 20px;
 }
 
 .get_in_touch .email-box input {
+  background-color: #fdfdfe;
   width: 50%;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 20px;
+}
+
+.get_in_touch .email-box input::placeholder {
+  opacity: .4;
 }
 
 .get_in_touch .message-box {
@@ -413,7 +410,13 @@ a:focus {
 }
 
 .get_in_touch .message-box textarea {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 600px;
+}
+
+.get_in_touch .message-box textarea::placeholder {
+  opacity: .4;
 }
 
 .get_in_touch button {
