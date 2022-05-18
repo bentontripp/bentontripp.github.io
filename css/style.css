@@ -10,66 +10,6 @@ h4 {
   font-weight: bold;
 }
 
-.layout_padding {
-  padding: 75px 0;
-}
-
-.layout_padding2 {
-  padding: 45px 0;
-}
-
-.layout_padding2-top {
-  padding-top: 45px;
-}
-
-.layout_padding-top {
-  padding-top: 75px;
-}
-
-.layout_padding-bottom {
-  padding-bottom: 75px;
-}
-
-.call_to-btn {
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 15px;
-  background-color: #005834;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.call_to-btn img,
-.sub_call_to-btn img {
-  width: 9px;
-  margin-left: 15px;
-  margin-top: 3px;
-}
-
-.call_to-btn:hover,
-.sub_call_to-btn:hover {
-  color: #fff;
-  -webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);
-}
-
-.sub_call_to-btn {
-  display: inline-block;
-  padding: 10px 28px;
-  border-radius: 25px;
-  background-color: #005834;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
 /*header section*/
 .top_container {
   font-family: 'Poppins', sans-serif;
@@ -85,8 +25,6 @@ nav.navbar.navbar-expand-lg {}
   text-align: center;
   text-transform: uppercase;
 }
-
-
 
 a,
 a:hover,
@@ -111,28 +49,6 @@ a:focus {
   height: auto;
 }
 
-
-
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
-.navbar-brand,
-.navbar-brand:hover {
-  font-size: 30px;
-  color: #005834;
-  font-weight: bold;
-}
-
-
-
 .custom_nav-container {
   z-index: 99999;
   padding: 15px 0;
@@ -147,6 +63,19 @@ a:focus {
   background-size: 55px;
 }
 
+.name-home {
+  font-size: 3em;
+  color: #005834;
+  font-weight: normal;
+}
+.name-home:hover {
+  font-size: 3em;
+  transform: translateY(-3px);
+  cursor: pointer;
+  color: #000;
+}
+
+
 /*end header section*/
 
 
@@ -155,18 +84,54 @@ a:focus {
   background-color: #f8faf9;
 }
 
+.home-greeting {
+  margin-top: 25px;
+  font-size: 3em;
+}
+
+.home-intro {
+  font-size: 2.25em;
+}
+
 .about_section .row {
+  align-items: top;
+  display:flex;
+  flex-direction: row;
+}
+
+.homepage-navigation {
+  padding: 20px 50px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.homepage-navigation a {
+  color: #005834;
+  display: flex;
   align-items: center;
+  flex-direction: row;
+  font-size: 2em;
+  white-space: nowrap;
+}
+
+.homepage-about-link:hover,
+.homepage-resume-link:hover,
+.homepage-blog-link:hover,
+.homepage-projects-link:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+  color: #000;
 }
 
 .portrait_img-box img {
-  width: 50%;
-  transform: translate(50%, 0);
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 200px;
 }
 
-.about_detail-box p {
-  margin: 5% 0;
-}
+
 
 /* end About section */
 
@@ -178,97 +143,9 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.about_me_box1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 3% 1% 0 1%;
-  transform: translateY(0);
-  transition: all .7s;
-  padding-bottom: 5%;
-}
-
-.about_me_box1:hover {
-  transform: translateY(-2%);
-  cursor: pointer;
-}
-
-.about_me_box1:hover .about_me_img-box1 {
-  background-color: #005834;
-}
-
-.about_me_img-box1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 85%;
-  border-radius: 30%;
-  background-color: #363636;
-}
-
-.about_me_box2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 3% 1% 0 1%;
-  transform: translateY(0);
-  transition: all .7s;
-  padding-bottom: 5%;
-}
-
-.about_me_box2:hover {
-  transform: translateY(-2%);
-  cursor: pointer;
-}
-
-.about_me_box2:hover .about_me_img-box2 {
-  background-color: #005834;
-}
-
-.about_me_img-box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 85%;
-  border-radius: 30%;
-  background-color: #363636;
-}
-
-
-.about_me_box3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 3% 1% 0 1%;
-  transform: translateY(0);
-  transition: all .7s;
-  padding-bottom: 5%;
-}
-
-.about_me_box3:hover {
-  transform: translateY(-2%);
-  cursor: pointer;
-}
-
-.about_me_box3:hover .about_me_img-box3 {
-  background-color: #005834;
-}
-
-.about_me_img-box3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 85%;
-  border-radius: 30%;
-  background-color: #363636;
-}
-
+.about_me_box1,
+.about_me_box2,
+.about_me_box3,
 .about_me_box4 {
   display: flex;
   flex-direction: column;
@@ -280,15 +157,23 @@ a:focus {
   padding-bottom: 5%;
 }
 
-.about_me_box4:hover {
-  transform: translateY(-2%);
+.about_me_box1:hover,
+.about_me_box2:hover,
+.about_me_box3:hover,
+.about_me_box4:hover  {
+  transform: translateY(-2px);
   cursor: pointer;
 }
-
+.about_me_box1:hover .about_me_img-box1,
+.about_me_box2:hover .about_me_img-box2,
+.about_me_box3:hover .about_me_img-box3,
 .about_me_box4:hover .about_me_img-box4 {
   background-color: #005834;
 }
 
+.about_me_img-box1,
+.about_me_img-box2,
+.about_me_img-box3,
 .about_me_img-box4 {
   display: flex;
   justify-content: center;
@@ -297,13 +182,6 @@ a:focus {
   height: 85%;
   border-radius: 30%;
   background-color: #363636;
-}
-
-.heading-text {
-  padding: 0;
-  margin: 0;
-  color: #005834;
-  font-weight: bold;
 }
 
 .about_me_emoji {
@@ -380,10 +258,11 @@ a:focus {
 }
 
 .get_in_touch h5 {
-  color: #005834;
+  color: #027243;
   font-size: 2em;
   padding-left: 20px;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .get_in_touch .email-box {
@@ -433,6 +312,13 @@ a:focus {
   margin-bottom: 5px;
 }
 
+.get_in_touch #submit-button:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+  color:#005834;
+  background-color: #fff;
+}
+
 .get_in_touch #reset-button {
   border: none;
   background-color: #005834;
@@ -443,6 +329,13 @@ a:focus {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+.get_in_touch #reset-button:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+  color:#005834;
+  background-color: #fff;
 }
 
 /* end info section */
