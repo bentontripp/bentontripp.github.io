@@ -15,52 +15,24 @@ h4 {
   font-family: 'Poppins', sans-serif;
 }
 
-.header_section {}
-
-nav.navbar.navbar-expand-lg {}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+.header-container {
   padding: 10px 20px;
   color: #005834;
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  white-space: nowrap;
 }
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: initial;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-
-.top_container {}
-
-.top_container.sub_page {
-  height: auto;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 15px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
+.navigation-menu {
+  padding: 20px 50px;
+  display: flex;
+  align-items: right;
+  flex-direction: row;
+  margin-left: 30%;
+  margin-right: 10px;
 }
 
 .name-home {
@@ -70,6 +42,26 @@ a:focus {
 }
 .name-home:hover {
   font-size: 3em;
+  transform: translateY(-3px);
+  cursor: pointer;
+  color: #000;
+}
+
+.nav-link-home,
+.nav-link-about,
+.nav-link-resume,
+.nav-link-projects,
+.nav-link-blog {
+  font-size: 1.5em;
+  color: #005834;
+  margin-left: 10px;
+}
+
+.nav-link-home:hover,
+.nav-link-about:hover,
+.nav-link-resume:hover,
+.nav-link-projects:hover,
+.nav-link-blog:hover {
   transform: translateY(-3px);
   cursor: pointer;
   color: #000;
@@ -86,11 +78,13 @@ a:focus {
 
 .home-greeting {
   margin-top: 25px;
+  margin-left: 20px;
   font-size: 3em;
 }
 
 .home-intro {
   font-size: 2.25em;
+  margin-left: 30px;
 }
 
 .about_section .row {
@@ -250,6 +244,10 @@ a:focus {
 .linkedin img {
   width: 62px;
 }
+.linkedin p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 .get_in_touch {
   display: flex;
@@ -363,6 +361,20 @@ a:focus {
 
 
 @media only screen and (max-width: 600px) {
+  .header-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navigation-menu {
+    padding: 10px 10px;
+    font-size: .7em;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   .contact_container {
     display: flex;
     justify-content: left;
@@ -370,7 +382,16 @@ a:focus {
     flex-wrap: wrap;
   }
 
+  .get_in_touch .email-box input {
+    margin-bottom: 6px;
+  }
+
   .get_in_touch .message-box textarea {
-    width: 400px;
+    width: 350px;
+  }
+
+  .get_in_touch .message-box textarea{
+    margin-top: 3px;
+    margin-right: 5px;
   }
 } 

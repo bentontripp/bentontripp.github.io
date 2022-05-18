@@ -26,9 +26,6 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-
-
-
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
 
 
@@ -37,36 +34,20 @@
 <body onunload="OnReload()">
   <div class="top_container">
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="name-home" href="index.html">
-            Benton Tripp
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> about </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="resume.html"> Resume </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html"> Blog </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projects.html"> Projects </a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+    <div class="header-container">
+      <div class="header-title">
+        <a class="name-home" href="index.html">
+          Benton Tripp
+        </a>
       </div>
-    </header>
+      <div class="navigation-menu">
+        <a class="nav-link-home" href="index.html"> Home </a>
+        <a class="nav-link-about" href="about.html"> About </a>
+        <a class="nav-link-resume" href="resume.html"> Resume </a>
+        <a class="nav-link-blog" href="blog.html"> Blog </a>
+        <a class="nav-link-projects" href="projects.html"> Projects </a>
+      </div>
+    </div>
   </div>
   <!-- end header section -->
 
@@ -91,7 +72,7 @@
       <div class="info_social" >
         <a class="linkedin" href="https://www.linkedin.com/in/bentontripp/" target="_blank">
           <img src="images/linkedin-icon.png" alt="" >
-          &nbsp; Connect on LinkedIn
+          <p>Connect on LinkedIn</p>
         </a>
         <a class="github" href="https://github.com/bentontripp" target="_blank">
           <img src="images/github-icon.png" alt="">
