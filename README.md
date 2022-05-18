@@ -1,4 +1,5 @@
 # Benton Tripp
+Check out my website [here](https://bentontripp.github.io/) :point_left:
 ### Connect
 You can find me on LinkedIn :point_right: [LinkedIn Profile](https://www.linkedin.com/in/bentontripp/) <br>
 ### About Me
