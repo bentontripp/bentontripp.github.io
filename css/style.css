@@ -155,7 +155,6 @@ a:focus {
 /* about section */
 .about_section {
   background-color: #f8faf9;
-
 }
 
 .about_section .row {
@@ -164,13 +163,15 @@ a:focus {
 
 .portrait_img-box img {
   width: 50%;
+  transform: translate(50%, 0);
 }
 
 .about_detail-box p {
-  margin: 45px 0;
+  margin: 5% 0;
 }
 
 /* end About section */
+
 
 /* about_me section */
 .about_me_container {
@@ -181,12 +182,13 @@ a:focus {
 
 .about_me_box1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 3% 1% 0 1%;
   transform: translateY(0);
   transition: all .7s;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .about_me_box1:hover {
@@ -202,25 +204,21 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 170px;
   height: 85%;
   border-radius: 30%;
   background-color: #363636;
 }
 
-.about_me_box1 h4 {
-  display: flex;
-  margin-top: 88%;
-}
-
 .about_me_box2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 3% 1% 0 1%;
   transform: translateY(0);
   transition: all .7s;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .about_me_box2:hover {
@@ -236,20 +234,22 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 170px;
   height: 85%;
   border-radius: 30%;
   background-color: #363636;
 }
 
+
 .about_me_box3 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 3% 1% 0 1%;
   transform: translateY(0);
   transition: all .7s;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .about_me_box3:hover {
@@ -265,7 +265,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 170px;
   height: 85%;
   border-radius: 30%;
   background-color: #363636;
@@ -273,12 +273,13 @@ a:focus {
 
 .about_me_box4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 3% 1% 0 1%;
   transform: translateY(0);
   transition: all .7s;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .about_me_box4:hover {
@@ -294,24 +295,10 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 170px;
   height: 85%;
   border-radius: 30%;
   background-color: #363636;
-}
-
-
-
-.about_me_box2 h4 {
-  margin-top: 1%;
-}
-
-.about_me_box3 h4 {
-  margin-top: 1%;
-}
-
-.about_me_box4 h4 {
-  margin-top: 1%;
 }
 
 .heading-text {
@@ -323,6 +310,10 @@ a:focus {
 
 .about_me_emoji {
   font-size: 7em;
+}
+
+.about_me_header {
+  display: flex;
 }
 
 /* end About section */
