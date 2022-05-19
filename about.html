@@ -51,61 +51,89 @@
   <section class="about_me_section layout_padding">
     <div class="container">
       <div class="about_me_container">
-        <div class="about_me_box1">
-          <div class="about_me_img-box1">
-            <div class="about_me_emoji">
-              <p>
-                👨‍👩‍👧
-              </p>
+        <div class="about_me_box1" id="about_me_box1">
+          <button 
+              class="about_me_img-box1" 
+              id="about_me_img-box1"
+              type="button" 
+              onclick="OnAboutMeButton(event, this)">
+            <div class="about_me_emoji shrinkable1">
+              👨‍👩‍👧
             </div> 
-          </div>
+            <div class="about_me_description1" id="about_me_description1">
+              About my family. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nihil dolorum dolores et quae, dolore nobis. Quam iure nihil deserunt non. 
+              Atque accusantium, consequuntur enim hic dolorum ab porro explicabo! Quam.
+            </div>
+          </button>
           <div class="about_me_header">
-            <h4>
+            <h4 class="shrinkable1">
               Family
             </h4>
           </div>
         </div>
         
-        <div class="about_me_box2">
-          <div class="about_me_img-box2">
-            <div class="about_me_emoji">
-              <p>
-                🏃‍♂️
-              </p>
+        <div class="about_me_box2" id="about_me_box2">
+          <button 
+              class="about_me_img-box2" 
+              id="about_me_img-box2"
+              type="button" 
+              onclick="OnAboutMeButton(event, this)">
+            <div class="about_me_emoji shrinkable1">
+              🏃‍♂️
             </div>
-          </div>
+            <div class="about_me_description2" id="about_me_description2">
+              About my Hobbies. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nihil dolorum dolores et quae, dolore nobis. Quam iure nihil deserunt non. 
+              Atque accusantium, consequuntur enim hic dolorum ab porro explicabo! Quam.
+            </div>
+          </button>
           <div class="about_me_header">
-            <h4>
+            <h4 class="shrinkable1">
               Hobbies
             </h4>
           </div>
         </div>
         
-        <div class="about_me_box3">
-          <div class="about_me_img-box3">
-            <div class="about_me_emoji">
-              <p>
-                🎓
-              </p>
+        <div class="about_me_box3" id="about_me_box3">
+          <button 
+              class="about_me_img-box3" 
+              id="about_me_img-box3"
+              type="button" 
+              onclick="OnAboutMeButton(event, this)">
+            <div class="about_me_emoji shrinkable1">
+              🎓
             </div>
-          </div>
+            <div class="about_me_description3" id="about_me_description3">
+              About my Background. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nihil dolorum dolores et quae, dolore nobis. Quam iure nihil deserunt non. 
+              Atque accusantium, consequuntur enim hic dolorum ab porro explicabo! Quam.
+            </div>
+          </button>
           <div class="about_me_header">
-            <h4>
+            <h4 class="shrinkable1">
               Background
             </h4>
           </div>
         </div>
         
-        <div class="about_me_box4">
-          <div class="about_me_img-box4">
-            <div class="about_me_emoji">
-              <p>
+        <div class="about_me_box4" id="about_me_box4">
+          <button 
+              class="about_me_img-box4" 
+              id="about_me_img-box4"
+              type="button" 
+              onclick="OnAboutMeButton(event, this)">
+            <div class="about_me_emoji shrinkable1">
                 🐢
-              </p>
             </div>
-          </div>
+            <div class="about_me_description4" id="about_me_description4">
+              Fun facts. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nihil dolorum dolores et quae, dolore nobis. Quam iure nihil deserunt non. 
+              Atque accusantium, consequuntur enim hic dolorum ab porro explicabo! Quam.
+            </div>
+          </button>
           <div class="about_me_header">
-            <h4>
+            <h4 class="shrinkable1">
               Fun Facts
             </h4>
           </div>
@@ -135,7 +163,11 @@
         <h5>
           Get in Touch
         </h5>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScJyLonDan8lh85Z1W27jg945VyJb5245FgcosdAXKzNMIx4g/formResponse?" name="gform" id="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;"> 
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScJyLonDan8lh85Z1W27jg945VyJb5245FgcosdAXKzNMIx4g/formResponse?" 
+              name="gform" 
+              id="gform" 
+              enctype="text/plain" 
+              target="hidden_iframe" > 
           <!-- <input type="hidden" name="csrf" value="5d6fg58i-6d52-6587-ps98-4a5as6sd5r"> -->
           <div class="email-box">
             <input id="entry.1392159076" name="entry.1392159076" type="text" placeholder="Enter your first name" onkeydown="OnEnter(event)">
@@ -150,7 +182,7 @@
             <input id="reset-button" type="reset" value="Reset">
           </div>
         </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
       </div>
     </div>
   </section>
@@ -165,8 +197,9 @@
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-  <script type="text/javascript">var submitted=false;</script>
 </body>
 
 </html>

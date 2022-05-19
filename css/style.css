@@ -71,7 +71,7 @@ h4 {
 /*end header section*/
 
 
-/* about section */
+/* Home section */
 .about_section {
   background-color: #f8faf9;
 }
@@ -130,7 +130,7 @@ h4 {
   margin-bottom: 20px;
   width: 200px;
 }
-/* end About section */
+/* end Home section */
 
 
 /* about_me section */
@@ -179,16 +179,11 @@ h4 {
   height: 180px;
   border-radius: 30%;
   background-color: #363636;
+  border: none;
 }
 
-.smalldesc {
-  max-height: 52px;
-  overflow: hidden;
-  transition: all 1s ease;
-}
-
-.smalldesc.expand {
-  max-height: 10000px;
+.about_me_description1 {
+  
 }
 
 .about_me_emoji {
@@ -197,6 +192,74 @@ h4 {
 
 .about_me_header {
   display: flex;
+}
+
+.about_me_description1,
+.about_me_description2,
+.about_me_description3,
+.about_me_description4 {
+  display: none;
+  opacity: 0;
+}
+
+.shrinkable1.shrink {
+  animation: shrink1 .3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.about_me_img-box1.shrink,
+.about_me_img-box2.shrink,
+.about_me_img-box3.shrink,
+.about_me_img-box4.shrink {
+  animation: box-shrink .3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.about_me_img-box1.expand,
+.about_me_img-box2.expand,
+.about_me_img-box3.expand,
+.about_me_img-box4.expand {
+  animation: box-expand .3s ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.about_me_description1.expand,
+.about_me_description2.expand,
+.about_me_description3.expand,
+.about_me_description4.expand {
+  animation: text-expand .3s ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes shrink1 {
+  100% {
+    font-size: 0em;
+    opacity: 0;
+  }
+}
+
+@keyframes box-shrink {
+  100% {
+    width: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes box-expand {
+  100% {
+    width: 96%;
+    height: 300px;
+    border-radius: 0;
+    background-color:#363636;
+  }
+}
+
+@keyframes text-expand {
+  100% {
+    opacity: 1;
+    font-size: 1em;
+    color:#fff;
+  }
 }
 
 /* end About section */
@@ -254,7 +317,6 @@ h4 {
   background-color: #000;
   transform: translateY(-3px);
 }
-
 
 .author {
   color: #005834;
@@ -469,7 +531,10 @@ h4 {
     margin-top: 25px;
     margin-right: 5px;
   }
+
+
 } 
+
 
 /* Animations */
 
@@ -492,27 +557,3 @@ h4 {
   }
 }
 
-/*
-.about_me_box1,
-.about_me_box2,
-.about_me_box3,
-.about_me_box4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 3% 1% 0 1%;
-  transform: translateY(0);
-  transition: all .7s;
-  padding-bottom: 5%;
-} */
-
-.smalldesc {
-  max-height: 200px;
-  overflow: hidden;
-  transition: all 1s ease;
-}
-
-.smalldesc.expand {
-  max-height: var(--originalHeight);
-}
