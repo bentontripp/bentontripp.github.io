@@ -68,7 +68,12 @@ function OnAboutMeButton(event, btn) {
       }, 315);
     }
     else {
-      console.log('Unselected Family Description')
+      console.log('Unselected Family Description');
+      toggleCls('.about_me_description1', 'shrink');
+      desc.style.display == 'none';
+      //toggleCls('.about_me_img-box1', 'shrink');
+      $('.about_me_img-box1').toggleClass('about_me_img-box1');
+      //TODO: Remove Class expand??????? https://stackoverflow.com/questions/31966878/forward-animation-on-click-reverse-animation-on-click
     }
   }
   // Hobbies
