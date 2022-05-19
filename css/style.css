@@ -179,9 +179,19 @@ h4 {
   justify-content: center;
   align-items: center;
   width: 170px;
-  height: 85%;
+  height: 180px;
   border-radius: 30%;
   background-color: #363636;
+}
+
+.smalldesc {
+  max-height: 52px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.smalldesc.expand {
+  max-height: 10000px;
 }
 
 .about_me_emoji {
@@ -426,4 +436,29 @@ h4 {
   50% {
       content: var(--emoji);
   }
+}
+
+/*
+.about_me_box1,
+.about_me_box2,
+.about_me_box3,
+.about_me_box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3% 1% 0 1%;
+  transform: translateY(0);
+  transition: all .7s;
+  padding-bottom: 5%;
+} */
+
+.smalldesc {
+  max-height: 200px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.smalldesc.expand {
+  max-height: var(--originalHeight);
 }

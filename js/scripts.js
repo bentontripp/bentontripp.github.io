@@ -12,3 +12,10 @@ function OnEnter(event) {
       event.preventDefault();
     }
 } 
+
+const smalldesc = document.querySelector('.smalldesc');
+smalldesc.style.setProperty('--originalHeight', `${smalldesc.scrollHeight}px`);
+
+document.querySelector('a').addEventListener('click', function() {
+  smalldesc.classList.toggle('expand');
+});
