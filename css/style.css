@@ -402,6 +402,86 @@ h4 {
 
 /* end Blog section */
 
+
+/* resume section */
+
+.header-container-resume {
+  padding: 10px 20px;
+  color: #005834;
+  text-transform: uppercase;
+  display: block;
+  white-space: nowrap;
+  font-size: .8em;
+  text-align: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.resume-header{
+  display: flex;
+  flex-direction: column;
+  color: #000
+}
+
+.resume-header h3 {
+  color: #005834;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.resume-header hr {
+  width: 100%;
+  border-width:5px;
+  color:#000;
+}
+
+.resume-skills {
+
+}
+
+.resume-main-section {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main-section hr {
+  width: 250px;
+  border-width:5px;
+  color:#000;
+}
+
+.resume-overview {
+  
+}
+
+.resume-education {
+  
+}
+
+.resume-experience {
+
+}
+
+/* end resume section */
+
+
 /* info section */
 .info_section {
   padding-top: 1%;
@@ -571,6 +651,8 @@ h4 {
 }
 
 /* end footer section*/
+
+
 
 
 @media only screen and (max-width: 1000px) {
