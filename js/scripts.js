@@ -48,7 +48,7 @@ function displayToggle(B1, B2, B3, button, dsc, about_dsc) {
   B2.style.display = 'none';
   B3.style.display = 'none';
   toggleCls(button, 'expand');
-  dsc.style.display = 'block';
+  dsc.style.display = 'flex';
   toggleCls(about_dsc, 'expand');
 };
 
