@@ -180,10 +180,7 @@ h4 {
   border-radius: 30%;
   background-color: #363636;
   border: none;
-}
-
-.about_me_description1 {
-  
+  outline: none;
 }
 
 .about_me_emoji {
@@ -233,14 +230,6 @@ h4 {
   -webkit-animation-fill-mode: forwards;
 }
 
-.about_me_description1.shrink,
-.about_me_description2.shrink,
-.about_me_description3.shrink,
-.about_me_description4.shrink {
-  animation: text-shrink 0s;
-  -webkit-animation-fill-mode: forwards;
-}
-
 @keyframes shrink1 {
   100% {
     font-size: 0em;
@@ -250,7 +239,6 @@ h4 {
 
 @keyframes box-shrink {
   100% {
-    width: 0px;
     opacity: 0;
   }
 }
@@ -264,24 +252,9 @@ h4 {
   }
 }
 
-@keyframes box-shrink {
-  100% {
-    width: 96%;
-    height: 300px;
-    border-radius: 0;
-    background-color:#363636;
-  }
-}
-
 @keyframes text-expand {
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes text-shrink {
-  100% {
-    opacity: 0;
   }
 }
 
@@ -471,6 +444,7 @@ h4 {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 .get_in_touch #submit-button:hover{

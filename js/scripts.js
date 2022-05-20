@@ -32,7 +32,7 @@ function OnEnter(event) {
 //---------------------
 
 function toggleCls(cls, anim) {
-  $(cls).toggleClass(anim)
+  $(cls).addClass(anim);
 };
 
 function runToggles() {
@@ -52,6 +52,16 @@ function displayToggle(B1, B2, B3, button, dsc, about_dsc) {
   toggleCls(about_dsc, 'expand');
 };
 
+function reverseDisplay(B1, B2, B3, button, dsc, about_dsc) {
+  $(about_dsc).removeClass('expand');
+  dsc.style.display = 'none';
+  B1.style.display = 'flex';
+  B2.style.display = 'flex';
+  B3.style.display = 'flex';
+  $(button).removeClass('expand').removeClass('shrink');
+  $('.shrinkable1').removeClass('shrink');
+}
+
 function OnAboutMeButton(event, btn) {
   b1 = document.getElementById('about_me_box1');
   b2 = document.getElementById('about_me_box2');
@@ -60,7 +70,7 @@ function OnAboutMeButton(event, btn) {
   // Family
   if (btn.id == 'about_me_img-box1') {
     desc = document.getElementById('about_me_description1');
-    if (desc.style.display == '') {
+    if (desc.style.display == '' | desc.style.display == 'none') {
       console.log('Selected Family Description');
       runToggles();
       setTimeout(function() {
@@ -69,17 +79,16 @@ function OnAboutMeButton(event, btn) {
     }
     else {
       console.log('Unselected Family Description');
-      toggleCls('.about_me_description1', 'shrink');
-      desc.style.display == 'none';
-      //toggleCls('.about_me_img-box1', 'shrink');
-      $('.about_me_img-box1').toggleClass('about_me_img-box1');
-      //TODO: Remove Class expand??????? https://stackoverflow.com/questions/31966878/forward-animation-on-click-reverse-animation-on-click
+      reverseDisplay(b2, b3, b4, '.about_me_img-box1', desc, '.about_me_description1');
+      $('.about_me_img-box2').removeClass('shrink');
+      $('.about_me_img-box3').removeClass('shrink');
+      $('.about_me_img-box4').removeClass('shrink');
     }
   }
   // Hobbies
   else if (btn.id == 'about_me_img-box2') {
     desc = document.getElementById('about_me_description2');
-    if (desc.style.display == '') {
+    if (desc.style.display == '' | desc.style.display == 'none') {
       console.log('Selected Hobby Description');
       runToggles();
       setTimeout(function() {
@@ -88,12 +97,16 @@ function OnAboutMeButton(event, btn) {
     }
     else {
       console.log('Unselected Hobby Description');
+      reverseDisplay(b1, b3, b4, '.about_me_img-box2', desc, '.about_me_description2');
+      $('.about_me_img-box1').removeClass('shrink');
+      $('.about_me_img-box3').removeClass('shrink');
+      $('.about_me_img-box4').removeClass('shrink');
     }
   }
   // Background
   else if (btn.id == 'about_me_img-box3') {
     desc = document.getElementById('about_me_description3');
-    if (desc.style.display == '') {
+    if (desc.style.display == '' | desc.style.display == 'none') {
       console.log('Selected Background Description');
       runToggles();
       setTimeout(function() {
@@ -102,12 +115,16 @@ function OnAboutMeButton(event, btn) {
     }
     else {
       console.log('Unselected Background Description');
+      reverseDisplay(b1, b2, b4, '.about_me_img-box3', desc, '.about_me_description3');
+      $('.about_me_img-box1').removeClass('shrink');
+      $('.about_me_img-box2').removeClass('shrink');
+      $('.about_me_img-box4').removeClass('shrink');
     }
   }
   // Fun Facts
   else {
     desc = document.getElementById('about_me_description4');
-    if (desc.style.display == '') {
+    if (desc.style.display == '' | desc.style.display == 'none') {
       console.log('Selected Fun Facts');
       runToggles();
       setTimeout(function() {
@@ -116,6 +133,10 @@ function OnAboutMeButton(event, btn) {
     }
     else {
       console.log('Unselected Fun Facts');
+      reverseDisplay(b1, b2, b3, '.about_me_img-box4', desc, '.about_me_description4');
+      $('.about_me_img-box1').removeClass('shrink');
+      $('.about_me_img-box2').removeClass('shrink');
+      $('.about_me_img-box3').removeClass('shrink');
     }
   }
 };
