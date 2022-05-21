@@ -406,7 +406,7 @@ h4 {
 /* resume section */
 
 .header-container-resume {
-  padding: 10px 20px;
+  padding: 5px 5px;
   color: #005834;
   text-transform: uppercase;
   display: block;
@@ -421,26 +421,33 @@ h4 {
 .resume-container {
   display: flex;
   flex-direction: row;
+  align-items: left;
+  padding-left: 5px;
+  margin-left: auto;
 }
 
 .resume-sidebar {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
+  width: 300px;
 }
 
 .resume-header{
   display: flex;
   flex-direction: column;
-  color: #000
+  color: #fff;
+  background-color: #363636;
+  width: 100%;
 }
 
-.resume-header h3 {
-  color: #005834;
+.resume-header h2 {
+  color: #fff;
   text-transform: uppercase;
-  font-weight: normal;
   margin-bottom: 5px;
   margin-top: 5px;
+  margin-left: 5px;
+  white-space: nowrap;
 }
 
 .resume-header hr {
@@ -449,8 +456,79 @@ h4 {
   color:#000;
 }
 
-.resume-skills {
 
+.resume-info {
+  padding: 3% 5%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  color:#fff
+}
+
+.resume-info a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.resume-info .github:hover{
+  transform: translateY(-3%);
+  cursor: pointer;
+  color:#00854d;
+}
+
+.resume-info .github img {
+  width: 90px;
+}
+
+.resume-info .linkedin {
+  margin-left: 14px;
+}
+
+.resume-info .linkedin:hover{
+  transform: translateY(-3%);
+  cursor: pointer;
+  color:#00854d;
+}
+
+.resume-info .linkedin img {
+  width: 62px;
+}
+.resume-info .linkedin p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.resume-info .medium {
+  margin-left: 14px;
+}
+
+.resume-info .medium:hover{
+  transform: translateY(-3%);
+  cursor: pointer;
+  color:#00854d;
+}
+
+.resume-info .medium img {
+  width: 52px;
+  margin-left: 5px;
+}
+.resume-info .medium p {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.resume-overview {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.resume-skills {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .resume-main-section {
@@ -467,9 +545,6 @@ h4 {
   color:#000;
 }
 
-.resume-overview {
-  
-}
 
 .resume-education {
   
