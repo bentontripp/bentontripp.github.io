@@ -439,8 +439,8 @@ h4 {
 
 .resume-sidebar {
   display: block;
-  flex-direction: column;
   margin-right: 20px;
+  margin-bottom: 20px;
   width: 300px;
 }
 
@@ -551,18 +551,15 @@ h4 {
 }
 
 .resume-main-section hr {
-  width: 250px;
+  width: 850px;
   border-width:5px;
-  color:#000;
+  color:#000
 }
 
-
-.resume-education {
-  
-}
-
-.resume-experience {
-
+.resume-certs h4,
+.resume-education h4,
+.resume-experience h4{
+  color: #005834;
 }
 
 /* end resume section */
