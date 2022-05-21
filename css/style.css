@@ -405,14 +405,16 @@ h4 {
 
 /* resume section */
 
+.body-resume {
+  background-color: #f8faf9;
+}
+
 .header-container-resume {
   position:fixed;
   top: 0;
   right: 0;
-  left: 0;
   padding: 5px 5px;
-  background-color: #fff;
-  color: #005834;
+  background-color: #005834;
   text-transform: uppercase;
   display: block;
   white-space: nowrap;
@@ -422,6 +424,9 @@ h4 {
   margin-right: 5px;
 }
 
+.header-container-resume a {
+  color: #fff;
+}
 
 .resume-container {
   display: flex;
@@ -433,7 +438,7 @@ h4 {
 }
 
 .resume-sidebar {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-right: 20px;
   width: 300px;
@@ -464,7 +469,7 @@ h4 {
 
 
 .resume-info {
-  padding: 3% 5%;
+  padding: 10px;
   display: flex;
   align-items: left;
   flex-direction: column;
