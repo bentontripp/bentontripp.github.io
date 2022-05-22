@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #000205;
@@ -838,7 +840,12 @@ h4 {
   .sub-family-content {
     flex-direction: column;
   }
+  .footer section {
+    margin-right: 0px;
+    width: 450px;
+  }
 }
+
 
 /* Animations */
 
