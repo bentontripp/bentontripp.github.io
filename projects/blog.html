@@ -17,12 +17,12 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
 
 
 </head>
@@ -32,15 +32,22 @@
     <!-- header section strats -->
     <div class="header-container">
       <div class="header-title">
-        <a class="name-home" href="index.html">
+        <a class="name-home" href="../index.html">
           Benton Tripp
         </a>
       </div>
       <div class="navigation-menu">
-        <a class="nav-link-home" href="index.html"> Home </a>
-        <a class="nav-link-about" href="about.html"> About </a>
-        <a class="nav-link-resume" href="resume.html"> Resume </a>
-        <a class="nav-link-projects" href="projects.html"> Projects </a>
+        <a class="nav-link-home" href="../index.html"> Home </a>
+        <a class="nav-link-about" href="../about.html"> About </a>
+        <a class="nav-link-resume" href="../resume.html"> Resume </a>
+        <!--<a class="nav-link-projects" href="projects.html"> Projects </a>-->
+        <div class="dropdown-projects" id="about-dropdown">
+          <button class="dropbtn" id="about-dropbtn">Projects </button>
+          <div class="dropdown-content">
+            <a class="dropdown-menu-link" href="blog.html"> Blog Posts</a>
+            <a class="dropdown-menu-link" href="https://github.com/bentontripp" target="_blank">Github</a>
+          </div>
+        </div> 
       </div>
     </div>
   </div>
@@ -77,11 +84,11 @@
     <div class="contact_container ">
       <div class="info_social" >
         <a class="linkedin" href="https://www.linkedin.com/in/bentontripp/" target="_blank">
-          <img src="images/linkedin-icon.png" alt="" >
+          <img src="../images/linkedin-icon.png" alt="" >
           <p>Connect on LinkedIn</p>
         </a>
         <a class="github" href="https://github.com/bentontripp" target="_blank">
-          <img src="images/github-icon.png" alt="">
+          <img src="../images/github-icon.png" alt="">
           Find me on Github
         </a>
       </div>
@@ -118,8 +125,8 @@
   </section>
   <!-- footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
   <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script> 
 </body>
 
